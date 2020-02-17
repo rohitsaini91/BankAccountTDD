@@ -9,7 +9,7 @@
 import Foundation
 
 class AccountOwner: NSObject{
-    init?(firstName:String, lastName:String, emailAddress:String) {
+    init?(firstName:String, lastName:String, emailAddress:String,firstNameValidator:FirstNameValidator?=nil, lastNameValidator:LastNameValidator? = nil, emailAddressValidator:EmailAddressValidator? = nil) {
         super.init()
     }
 }

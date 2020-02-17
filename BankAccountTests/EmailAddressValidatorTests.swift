@@ -19,6 +19,7 @@ class EmailAddressValidatorTests: XCTestCase {
     fileprivate let invalidEmailAddress2 = "abcom"
     fileprivate let invalidEmailAddress3 = "a@b@com"
     
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
