@@ -14,6 +14,14 @@
 		FA1D73CD23FA973400E96D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1D73CC23FA973400E96D57 /* Assets.xcassets */; };
 		FA1D73D023FA973400E96D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1D73CE23FA973400E96D57 /* LaunchScreen.storyboard */; };
 		FA1D73DB23FA973500E96D57 /* BankAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73DA23FA973500E96D57 /* BankAccountTests.swift */; };
+		FA1D73E623FA97AC00E96D57 /* AccountOwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73E523FA97AC00E96D57 /* AccountOwnerTests.swift */; };
+		FA1D73E823FA9E0700E96D57 /* AccountOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73E723FA9E0700E96D57 /* AccountOwner.swift */; };
+		FA1D73EB23FAAAC800E96D57 /* FirstNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73EA23FAAAC800E96D57 /* FirstNameValidatorTests.swift */; };
+		FA1D73ED23FABBF200E96D57 /* FirstNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73EC23FABBF200E96D57 /* FirstNameValidator.swift */; };
+		FA1D73EF23FABF3B00E96D57 /* LastNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73EE23FABF3B00E96D57 /* LastNameValidatorTests.swift */; };
+		FA1D73F123FAC11A00E96D57 /* LastNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */; };
+		FA1D73F323FAC1F700E96D57 /* EmailAddressValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F223FAC1F700E96D57 /* EmailAddressValidatorTests.swift */; };
+		FA1D73F523FAC28B00E96D57 /* EmailAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		FA1D73D623FA973500E96D57 /* BankAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1D73DA23FA973500E96D57 /* BankAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTests.swift; sourceTree = "<group>"; };
 		FA1D73DC23FA973500E96D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1D73E523FA97AC00E96D57 /* AccountOwnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOwnerTests.swift; sourceTree = "<group>"; };
+		FA1D73E723FA9E0700E96D57 /* AccountOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOwner.swift; sourceTree = "<group>"; };
+		FA1D73EA23FAAAC800E96D57 /* FirstNameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameValidatorTests.swift; sourceTree = "<group>"; };
+		FA1D73EC23FABBF200E96D57 /* FirstNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameValidator.swift; sourceTree = "<group>"; };
+		FA1D73EE23FABF3B00E96D57 /* LastNameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameValidatorTests.swift; sourceTree = "<group>"; };
+		FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameValidator.swift; sourceTree = "<group>"; };
+		FA1D73F223FAC1F700E96D57 /* EmailAddressValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressValidatorTests.swift; sourceTree = "<group>"; };
+		FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 				FA1D73CC23FA973400E96D57 /* Assets.xcassets */,
 				FA1D73CE23FA973400E96D57 /* LaunchScreen.storyboard */,
 				FA1D73D123FA973400E96D57 /* Info.plist */,
+				FA1D73E923FA9E4E00E96D57 /* Model */,
 			);
 			path = BankAccount;
 			sourceTree = "<group>";
@@ -95,8 +112,23 @@
 			children = (
 				FA1D73DA23FA973500E96D57 /* BankAccountTests.swift */,
 				FA1D73DC23FA973500E96D57 /* Info.plist */,
+				FA1D73E523FA97AC00E96D57 /* AccountOwnerTests.swift */,
+				FA1D73EA23FAAAC800E96D57 /* FirstNameValidatorTests.swift */,
+				FA1D73EE23FABF3B00E96D57 /* LastNameValidatorTests.swift */,
+				FA1D73F223FAC1F700E96D57 /* EmailAddressValidatorTests.swift */,
 			);
 			path = BankAccountTests;
+			sourceTree = "<group>";
+		};
+		FA1D73E923FA9E4E00E96D57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D73E723FA9E0700E96D57 /* AccountOwner.swift */,
+				FA1D73EC23FABBF200E96D57 /* FirstNameValidator.swift */,
+				FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */,
+				FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1D73C823FA972F00E96D57 /* ViewController.swift in Sources */,
+				FA1D73F123FAC11A00E96D57 /* LastNameValidator.swift in Sources */,
+				FA1D73ED23FABBF200E96D57 /* FirstNameValidator.swift in Sources */,
+				FA1D73F523FAC28B00E96D57 /* EmailAddressValidator.swift in Sources */,
+				FA1D73E823FA9E0700E96D57 /* AccountOwner.swift in Sources */,
 				FA1D73C423FA972F00E96D57 /* AppDelegate.swift in Sources */,
 				FA1D73C623FA972F00E96D57 /* SceneDelegate.swift in Sources */,
 			);
@@ -211,6 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1D73DB23FA973500E96D57 /* BankAccountTests.swift in Sources */,
+				FA1D73EF23FABF3B00E96D57 /* LastNameValidatorTests.swift in Sources */,
+				FA1D73EB23FAAAC800E96D57 /* FirstNameValidatorTests.swift in Sources */,
+				FA1D73F323FAC1F700E96D57 /* EmailAddressValidatorTests.swift in Sources */,
+				FA1D73E623FA97AC00E96D57 /* AccountOwnerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

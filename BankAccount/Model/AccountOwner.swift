@@ -9,5 +9,7 @@
 import Foundation
 
 class AccountOwner: NSObject{
-    init?(firstname: String,)
+    init?(firstName:String, lastName:String, emailAddress:String) {
+        super.init()
+    }
 }
