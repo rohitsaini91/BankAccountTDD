@@ -68,5 +68,13 @@ class AccountOwnerTests: XCTestCase {
         XCTAssertNil(accountOwner)
     }
     
+   func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_ValidFirstNameValidator_CallsValidateOnValidator() {
+   let expectation = self.expectation(description: "Expected validate to be called on validator.")
+   let mockFirstNameValidator = MockFirstNameValidator(expectation, expectedValue:validFirstName)
+   let _ = AccountOwner(firstName: validFirstName,
+                          lastName: validLastName,
+                          emailAddress: validEmailAddress,
+                          firstNameValidator:mockFirstNameValidator)
+   self.waitForExpectations(timeout: 1.0, handler: nil) }
     
 }

@@ -22,6 +22,7 @@
 		FA1D73F123FAC11A00E96D57 /* LastNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */; };
 		FA1D73F323FAC1F700E96D57 /* EmailAddressValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F223FAC1F700E96D57 /* EmailAddressValidatorTests.swift */; };
 		FA1D73F523FAC28B00E96D57 /* EmailAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */; };
+		FA3970A023FBEDAE0054A86B /* MockFirstNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39709F23FBEDAE0054A86B /* MockFirstNameValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameValidator.swift; sourceTree = "<group>"; };
 		FA1D73F223FAC1F700E96D57 /* EmailAddressValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressValidatorTests.swift; sourceTree = "<group>"; };
 		FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressValidator.swift; sourceTree = "<group>"; };
+		FA39709F23FBEDAE0054A86B /* MockFirstNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirstNameValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		FA1D73D923FA973500E96D57 /* BankAccountTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA39709E23FBED140054A86B /* Mocks */,
 				FA1D73DA23FA973500E96D57 /* BankAccountTests.swift */,
 				FA1D73DC23FA973500E96D57 /* Info.plist */,
 				FA1D73E523FA97AC00E96D57 /* AccountOwnerTests.swift */,
@@ -129,6 +132,14 @@
 				FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA39709E23FBED140054A86B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FA39709F23FBEDAE0054A86B /* MockFirstNameValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 			files = (
 				FA1D73DB23FA973500E96D57 /* BankAccountTests.swift in Sources */,
 				FA1D73EF23FABF3B00E96D57 /* LastNameValidatorTests.swift in Sources */,
+				FA3970A023FBEDAE0054A86B /* MockFirstNameValidator.swift in Sources */,
 				FA1D73EB23FAAAC800E96D57 /* FirstNameValidatorTests.swift in Sources */,
 				FA1D73F323FAC1F700E96D57 /* EmailAddressValidatorTests.swift in Sources */,
 				FA1D73E623FA97AC00E96D57 /* AccountOwnerTests.swift in Sources */,
