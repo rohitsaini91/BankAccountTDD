@@ -24,6 +24,13 @@
 		FA1D73F523FAC28B00E96D57 /* EmailAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */; };
 		FA37776A23FCFC2E0070A7E6 /* MockLastNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37776923FCFC2E0070A7E6 /* MockLastNameValidator.swift */; };
 		FA37776C23FCFC920070A7E6 /* MockEmailAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37776B23FCFC920070A7E6 /* MockEmailAddressValidator.swift */; };
+		FA37776E23FD00C40070A7E6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37776D23FD00C40070A7E6 /* Transaction.swift */; };
+		FA37777023FD02350070A7E6 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37776F23FD02350070A7E6 /* BankAccount.swift */; };
+		FA37777223FD03CF0070A7E6 /* AccountNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37777123FD03CF0070A7E6 /* AccountNameValidator.swift */; };
+		FA37777423FD053D0070A7E6 /* AccountNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37777323FD053D0070A7E6 /* AccountNumberValidator.swift */; };
+		FA37777623FD075A0070A7E6 /* SortingCodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37777523FD075A0070A7E6 /* SortingCodeValidator.swift */; };
+		FA37777823FD09E60070A7E6 /* TransactionDescriptionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37777723FD09E60070A7E6 /* TransactionDescriptionValidator.swift */; };
+		FA37777A23FD0A660070A7E6 /* AmountValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37777923FD0A660070A7E6 /* AmountValidator.swift */; };
 		FA3970A023FBEDAE0054A86B /* MockFirstNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39709F23FBEDAE0054A86B /* MockFirstNameValidator.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +66,13 @@
 		FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressValidator.swift; sourceTree = "<group>"; };
 		FA37776923FCFC2E0070A7E6 /* MockLastNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLastNameValidator.swift; sourceTree = "<group>"; };
 		FA37776B23FCFC920070A7E6 /* MockEmailAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmailAddressValidator.swift; sourceTree = "<group>"; };
+		FA37776D23FD00C40070A7E6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FA37776F23FD02350070A7E6 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		FA37777123FD03CF0070A7E6 /* AccountNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNameValidator.swift; sourceTree = "<group>"; };
+		FA37777323FD053D0070A7E6 /* AccountNumberValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberValidator.swift; sourceTree = "<group>"; };
+		FA37777523FD075A0070A7E6 /* SortingCodeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingCodeValidator.swift; sourceTree = "<group>"; };
+		FA37777723FD09E60070A7E6 /* TransactionDescriptionValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDescriptionValidator.swift; sourceTree = "<group>"; };
+		FA37777923FD0A660070A7E6 /* AmountValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountValidator.swift; sourceTree = "<group>"; };
 		FA39709F23FBEDAE0054A86B /* MockFirstNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirstNameValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +148,13 @@
 				FA1D73EC23FABBF200E96D57 /* FirstNameValidator.swift */,
 				FA1D73F023FAC11A00E96D57 /* LastNameValidator.swift */,
 				FA1D73F423FAC28B00E96D57 /* EmailAddressValidator.swift */,
+				FA37776D23FD00C40070A7E6 /* Transaction.swift */,
+				FA37776F23FD02350070A7E6 /* BankAccount.swift */,
+				FA37777123FD03CF0070A7E6 /* AccountNameValidator.swift */,
+				FA37777323FD053D0070A7E6 /* AccountNumberValidator.swift */,
+				FA37777523FD075A0070A7E6 /* SortingCodeValidator.swift */,
+				FA37777723FD09E60070A7E6 /* TransactionDescriptionValidator.swift */,
+				FA37777923FD0A660070A7E6 /* AmountValidator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,13 +270,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA37777A23FD0A660070A7E6 /* AmountValidator.swift in Sources */,
 				FA1D73C823FA972F00E96D57 /* ViewController.swift in Sources */,
 				FA1D73F123FAC11A00E96D57 /* LastNameValidator.swift in Sources */,
+				FA37776E23FD00C40070A7E6 /* Transaction.swift in Sources */,
 				FA1D73ED23FABBF200E96D57 /* FirstNameValidator.swift in Sources */,
+				FA37777823FD09E60070A7E6 /* TransactionDescriptionValidator.swift in Sources */,
+				FA37777623FD075A0070A7E6 /* SortingCodeValidator.swift in Sources */,
+				FA37777023FD02350070A7E6 /* BankAccount.swift in Sources */,
 				FA1D73F523FAC28B00E96D57 /* EmailAddressValidator.swift in Sources */,
 				FA1D73E823FA9E0700E96D57 /* AccountOwner.swift in Sources */,
+				FA37777223FD03CF0070A7E6 /* AccountNameValidator.swift in Sources */,
 				FA1D73C423FA972F00E96D57 /* AppDelegate.swift in Sources */,
 				FA1D73C623FA972F00E96D57 /* SceneDelegate.swift in Sources */,
+				FA37777423FD053D0070A7E6 /* AccountNumberValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

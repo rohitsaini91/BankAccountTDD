@@ -103,5 +103,20 @@ class AccountOwnerTests: XCTestCase {
         
     }
 
+    func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_CopiesFirstNameToIVAR() {
+    let accountOwner = AccountOwner(firstName: validFirstName, lastName: validLastName,emailAddress: validEmailAddress)
+    let isEqual = accountOwner!.firstName.compare(validFirstName) == .orderedSame
+    XCTAssertTrue(isEqual)
+    }
+    func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_CopiesLastNameToIVAR() {
+    let accountOwner = AccountOwner(firstName: validFirstName, lastName: validLastName,emailAddress: validEmailAddress)
+    let isEqual = accountOwner!.lastName.compare(validLastName) == .orderedSame
+    XCTAssertTrue(isEqual)
+    }
+    func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_CopiesEmailAddressToIVAR() {
+    let accountOwner = AccountOwner(firstName: validFirstName, lastName: validLastName,emailAddress: validEmailAddress)
+    let isEqual = accountOwner!.emailAddress.compare(validEmailAddress) == .orderedSame
+    XCTAssertTrue(isEqual)
+    }
     
 }

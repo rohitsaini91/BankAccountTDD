@@ -11,11 +11,15 @@ import Foundation
 class AccountOwner: NSObject{
     
     
-    var firstName:String?
-    var lastName:String?
-    var emailAddress:String?
+    var firstName:String
+    var lastName:String
+    var emailAddress:String
     
     init?(firstName:String, lastName:String, emailAddress:String,firstNameValidator:FirstNameValidator?=nil, lastNameValidator:LastNameValidator? = nil, emailAddressValidator:EmailAddressValidator? = nil) {
+        
+        self.firstName = firstName
+        self.lastName = lastName
+        self.emailAddress = emailAddress
         
         let validator1 = firstNameValidator ?? FirstNameValidator()
         if validator1.validate(firstName) == false {
