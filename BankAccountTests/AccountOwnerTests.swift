@@ -18,6 +18,8 @@ class AccountOwnerTests: XCTestCase {
     private let invalidLastName = "h"
     private let invalidEmailAddress = "abcfinancial.com"
     private let emptyString = ""
+    
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -75,6 +77,31 @@ class AccountOwnerTests: XCTestCase {
                           lastName: validLastName,
                           emailAddress: validEmailAddress,
                           firstNameValidator:mockFirstNameValidator)
-   self.waitForExpectations(timeout: 1.0, handler: nil) }
+   self.waitForExpectations(timeout: 1.0, handler: nil)
+    
+    }
+    
+    func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_ValidLastNameValidator_CallsValidateOnValidator() {
+    let expectation = self.expectation(description: "Expected validate to be called on validator.")
+    let mockLastNameValidator = MockLastNameValidator(expectation, expectedValue:validLastName)
+    let _ = AccountOwner(firstName: validFirstName, lastName: validLastName,
+                             emailAddress: validEmailAddress,
+                             firstNameValidator:nil,
+                             lastNameValidator:mockLastNameValidator)
+    self.waitForExpectations(timeout: 1.0, handler: nil)
+        
+    }
+    
+    func testAccountOwner_ValidFirstName_ValidLastName_ValidEmailAddress_ValidEmailAddressValidator_CallsValidateOnValidator() {
+    
+    let expectation = self.expectation(description: "Expected validate to be called on validator.")
+    let mockEmailAddressValidator = MockEmailAddressValidator(expectation, expectedValue:validEmailAddress)
+    let _ = AccountOwner(firstName: validFirstName, lastName: validLastName,
+    emailAddress: validEmailAddress, firstNameValidator:nil,
+    lastNameValidator:nil, emailAddressValidator:mockEmailAddressValidator)
+    self.waitForExpectations(timeout: 1.0, handler: nil)
+        
+    }
+
     
 }
